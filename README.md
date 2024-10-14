@@ -17,7 +17,7 @@ A simple React-based desktop application for counting the occurrences of numbers
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+    git clone https://github.com/fuad-nasseraldeen/number-counter-desktop-app.git
     ```
 
 2. **Install the dependencies:**
@@ -29,14 +29,20 @@ A simple React-based desktop application for counting the occurrences of numbers
     ```bash
     npm start
     ```
-
+4. **Run the Desktop application:**
+    ```bash
+    npm run start-electron
+    ```
+5. **Build the Desktop application and Make an .exe file:**
+    ```bash
+    npm run package
+    ```
 ---
 
 ## 📷 Screenshots
 
-![App Screenshot](screenshot1.png)
-*(Provide a screenshot to showcase your app)*
-
+![App Screenshot](./public/screenshot1.png)
+![App Screenshot](./public/screenshot2.png)
 ---
 
 ## ⚙️ Technologies Used

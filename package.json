@@ -1,0 +1,64 @@
+{
+  "name": "number-counter-app",
+  "version": "0.1.0",
+  "private": true,
+  "productName": "Number Counter App",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "description": "A desktop application to count numbers from a text file.",
+  "author": "Fuad Nasser-Aldeen",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^4.2.3"
+  },
+  "devDependencies": {
+    "electron": "^32.2.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.yourapp.id",
+    "files": [
+      "build/**/*",
+      "public/electron.js",
+      "public/preload.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis",
+      "requestedExecutionLevel": "requireAdministrator"
+    }
+  },
+  "scripts": {
+    "start-electron": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "package": "npm run build && electron-builder --win --publish never",
+    "publish": "electron-builder --win --publish always"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
