@@ -62,5 +62,5 @@ Contributions are welcome! Feel free to submit a pull request or open an issue t
 
 ### 📫 Contact
 
-If you have any questions, feel free to reach out at [YOUR_EMAIL@example.com](mailto:YOUR_EMAIL@example.com).
+If you have any questions, feel free to reach out at [fuad-nasseraldeen@gmail.com](mailto:fuad-nasseraldeen@gmail.com).
 
