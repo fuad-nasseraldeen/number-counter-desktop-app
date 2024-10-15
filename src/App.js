@@ -77,12 +77,14 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {Object.entries(countMap).map(([number, count]) => (
-                <tr key={number}>
-                  <td>{number}</td>
-                  <td>{count}</td>
-                </tr>
-              ))}
+              {Object.entries(countMap)
+                .sort(([, countA], [, countB]) => countB - countA) // Sort by count in descending order
+                .map(([number, count]) => (
+                  <tr key={number}>
+                    <td>{number}</td>
+                    <td>{count}</td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>
